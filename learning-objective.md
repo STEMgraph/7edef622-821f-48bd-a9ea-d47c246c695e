@@ -1,0 +1,1 @@
+At the end of this challenge, the scholar will be able to explain the concept of \texttt{std::vector} as a dynamic, resizable container in C++, including its advantages over manually implemented dynamic arrays in C and its use cases for efficient data manipulation.

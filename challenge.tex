@@ -1,0 +1,80 @@
+\begin{challenge}
+    \chatitle{Dynamic Resizable Containers with \texttt{std::vector} in C++}
+    \begin{chadescription}
+    In C++, the \texttt{std::vector} class represents a dynamic array that can resize itself automatically, providing a powerful and flexible alternative to fixed-size arrays. 
+    Unlike \texttt{std::array} or raw C-style arrays, \texttt{std::vector} dynamically allocates memory as needed, enabling it to grow or shrink while maintaining efficient element access.
+
+    The \texttt{std::vector} container is especially useful for situations where the number of elements is unknown at compile time or may change frequently. 
+    With built-in functions like \texttt{push_back()}, \texttt{pop_back()}, and \texttt{insert()}, \texttt{std::vector} simplifies the process of managing dynamic data. 
+    Furthermore, it provides support for random access and seamless integration with modern C++ algorithms, making it a highly versatile container.
+
+    In this challenge, you will explore how to use \texttt{std::vector} for dynamic storage and manipulation of data. 
+    You will also compare it to a manually implemented dynamic array in C to understand the benefits of using this STL container. 
+    By the end, you will have a solid understanding of when and why to use \texttt{std::vector} in C++ programs.
+    \end{chadescription}
+
+    \begin{task}
+        Write a simple program using \texttt{std::vector} that performs the following steps:
+        \begin{enumerate}
+            \item Declare an empty \texttt{std::vector} of integers.
+            \item Use \texttt{push_back()} to add the numbers \texttt{10}, \texttt{20}, and \texttt{30} to the vector.
+            \item Print all elements of the vector using a range-based \texttt{for} loop.
+            \item Remove the last element of the vector using \texttt{pop_back()}.
+            \item Print the updated vector to the terminal.
+        \end{enumerate}
+
+        Save your program and run it to ensure the output matches your expectations.
+
+        \begin{questions}
+            \item How does \texttt{push_back()} simplify adding elements to a dynamic array compared to manually managing memory in C?
+            \item What happens when you call \texttt{pop_back()} on an empty vector? How can you prevent errors in such cases?
+            \item Why is it more efficient to add elements to the end of a vector than to insert them at arbitrary positions?
+        \end{questions}
+    \end{task}
+
+    \begin{task}
+        Write a program using \texttt{std::vector} that performs the following steps:
+        \begin{enumerate}
+            \item Declare and initialize an \texttt{std::vector} with the values \texttt{1, 2, 3, 4, 5}.
+            \item Implement a function named \texttt{calculateAverage} that takes the \texttt{std::vector} as a parameter and returns the average of its elements.
+            \item Insert the value \texttt{6} at the second position of the vector.
+            \item Remove the first element of the vector.
+            \item Print the vector after each modification and display the calculated average.
+        \end{enumerate}
+
+        Save your program, compile it, and ensure it runs correctly.
+
+        \begin{questions}
+            \item How does using \texttt{insert()} and \texttt{erase()} in \texttt{std::vector} differ from modifying a manually implemented dynamic array in C?
+            \item What advantages does the \texttt{calculateAverage} function gain from \texttt{std::vector}'s size-tracking capabilities compared to manually tracking array size in C?
+            \item How does the \texttt{std::vector}'s ability to grow dynamically simplify the overall program design?
+        \end{questions}
+    \end{task}
+
+    \begin{task}
+        Write a program using \texttt{std::vector} that performs the following steps:
+        \begin{enumerate}
+            \item Declare and initialize an \texttt{std::vector} of integers with the values \texttt{3, 1, 4, 1, 5, 9, 2}.
+            \item Implement a function named \texttt{findSecondLargest} that returns the second largest element in the vector.
+            \item Manually reverse the elements of the vector by swapping elements from the beginning and the end.
+            \item Add the value \texttt{7} to the end of the vector and recalculate the second largest element.
+            \item Print the reversed vector and the second largest element before and after adding the new value.
+        \end{enumerate}
+
+        Save your program, compile it, and ensure it runs correctly. This task requires careful use of indexing to manipulate the vector dynamically.
+
+        \begin{questions}
+            \item How does using \texttt{std::vector} for dynamic indexing and manipulation compare to manually allocating and resizing arrays in C?
+            \item What challenges arise when reversing the vector manually, and how does \texttt{std::vector}'s size-tracking help address these challenges?
+            \item Why is the \texttt{findSecondLargest} function easier to implement with \texttt{std::vector} than with a raw array?
+        \end{questions}
+    \end{task}
+
+    \begin{advise}
+        Working with \texttt{std::vector} helps you understand the power of dynamic memory management in C++ without the complexity of manual allocation and resizing in C. 
+        Unlike raw arrays or \texttt{std::array}, \texttt{std::vector} provides built-in methods for managing data, resizing, and accessing elements efficiently. 
+        Through this challenge, you have explored how \texttt{std::vector} simplifies dynamic operations, such as adding, removing, and rearranging elements. 
+        Always remember to use \texttt{std::vector} when you need random access and dynamic resizing, as it provides the best of both worlds for many common use cases. 
+        With practice, you'll find \texttt{std::vector} to be one of the most versatile and frequently used containers in C++ programming.
+    \end{advise}
+\end{challenge}
